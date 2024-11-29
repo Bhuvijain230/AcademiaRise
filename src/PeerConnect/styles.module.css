@@ -1,0 +1,344 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1238px;
+    margin: 165px auto 0;
+    padding: 0 20px;
+  }
+  
+  .pageTitle {
+    color: #761626;
+    font: 725 75px Inter, sans-serif;
+    margin-bottom: 107px;
+  }
+  
+  .mentorSection {
+    width: 100%;
+    margin-bottom: 64px;
+  }
+  
+  .mentorWrapper {
+    background-color: #A41E34;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .imageColumn {
+    flex: 0 0 183px;
+    margin-right: 20px;
+  }
+  
+  .mentorImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .infoColumn {
+    flex: 1;
+  }
+  
+  .mentorInfo {
+    color: #D9D9D9;
+    font: 700 16px Merriweather, serif;
+    line-height: 1.5;
+  }
+  
+  .connectButton {
+    background-color: #D9D9D9;
+    color: #000;
+    font: 800 40px Inter, sans-serif;
+    padding: 6px 57px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    z-index:10;
+  }
+  
+  .connectButton:hover {
+    background-color: #c0c0c0;
+  }
+  
+  .studentConnectSection {
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 52px 27px;
+    margin-bottom:71px;
+  }
+  
+  .studentConnectTitle {
+    background-color: #A41E34;
+    color: #FFF;
+    font: 725 32px Inter, sans-serif;
+    padding: 80px 70px;
+    text-align: center;
+    
+  }
+  
+  .studentConnectContent {
+    background-color: #68D2DF;
+    padding: 40px;
+    border: 20px solid #FFF;
+    font: 400 32px 'Merriweather Sans', sans-serif;
+    line-height: 1.5;
+  }
+  
+  .peerGroupSection {
+    width: 100%;
+    margin-bottom: 107px;
+  }
+  
+  .sectionTitle {
+    color: #761626;
+    font: 725 75px Inter, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .peerGroups {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .peerGroupCard {
+    flex: 1;
+    color: #FFF;
+    text-align: center;
+    padding: 111px 0;
+    font: 725 32px Inter, sans-serif;
+  }
+  
+  .mlCard {
+    background-color: #5B6671;
+  }
+  
+  .webDevCard {
+    background-color: #EF5871;
+  }
+  
+  .aiCard {
+    background-color: #D1D6DA;
+  }
+  
+  .formField {
+    margin-bottom: 20px;
+  }
+  
+  .formLabel {
+    display: block;
+    color: #000;
+    font: 500 32px Inter, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .formInput,
+  .formTextarea {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid rgba(197, 155, 162, 0.5);
+    border-radius: 5px;
+    font: 400 24px Poppins, sans-serif;
+  }
+  
+  .formTextarea {
+    min-height: 198px;
+    resize: vertical;
+  }
+  
+  .submitButton {
+    background-color: #761626;
+    color: #FFF;
+    font: 800 40px Inter, sans-serif;
+    padding: 28px 70px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #5a111d;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 20px; /* Reduced gap between icons */
+    justify-content: center;
+    margin: 30px 0; /* Adjusted margin for a tighter layout */
+  }
+  
+  .socialIcon {
+    width: 50px; /* Smaller icon size */
+    height: 50px; /* Adjust height to match the width */
+    transition: transform 0.3s;
+  }
+  
+  .socialIcon:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .footer {
+    background-color: #F2BAC3;
+    padding: 32px;
+    color: #FFF;
+    font: 700 16px Merriweather, serif;
+    text-align: center;
+  }
+  
+  .address,
+  .helpDesk {
+    line-height: 1.5;
+  }
+  
+  .address a,
+  .helpDesk a {
+    color: #FFF;
+    text-decoration: none;
+  }
+  
+  .address a:hover,
+  .helpDesk a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContainer {
+      margin-top: 40px;
+    }
+  
+    .pageTitle {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+  
+    .mentorWrapper {
+      flex-direction: column;
+    }
+  
+    .imageColumn {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .connectButton {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .peerGroups {
+      flex-direction: column;
+    }
+  
+    .sectionTitle {
+      font-size: 40px;
+    }
+  
+    .formInput,
+    .formTextarea {
+      padding: 15px;
+    }
+  
+    .submitButton {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .socialLinks {
+      display: flex;
+      gap: 15px; /* Reduced gap for tighter layout */
+      justify-content: center;
+      margin: 20px 0; /* Adjusted margin for compactness */
+  }
+  
+  
+    .socialIcon {
+      width: 30px; /* Reduced icon width */
+      height: 30px; /* Reduced icon height */
+      transition: transform 0.3s;
+  }
+  
+  .socialIcon:hover {
+      transform: scale(1.1);
+  }
+  @media (max-width: 600px) {
+    .socialIcon {
+        width: 20px; /* Even smaller size for mobile screens */
+        height: 20px;
+    }
+    .socialLinks {
+        gap: 10px;
+    }
+}
+
+  
+    .mainContainer {
+      padding: 20px;
+    }
+    
+    .pageTitle {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    
+    .mentorSection {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .connectButton {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .connectButton:hover {
+      background-color: #0056b3;
+    }
+    
+    .dialogOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .dialogBox {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .dialogButton {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .dialogButton:hover {
+      background-color: #0056b3;
+    }
+    
+  }
